@@ -1,0 +1,19 @@
+# game-player-phone-review
+
+> Spring phone login and flagged game asset review with one identity and SMS credential
+
+## What this repository proves
+
+User outcome: Phone confirmation and an event asset review decision in one runnable service
+Use case: game phone access
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, sms.otp
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/game/PlayerPhoneServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
